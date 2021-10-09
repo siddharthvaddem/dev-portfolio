@@ -15,13 +15,14 @@ import { Typewriter } from 'react-simple-typewriter'
 export default function Home() {
   return (
     <>
-    <div className={styles.container}>
+    <div style={{display:'flex',flexDirection:'row'}}>
+    <div className={styles.containermoving}>
       <h1 className={styles.title}>
         {' '}
         <span className={styles.altcol}>s</span>vaddem<span className={styles.altcol}>.</span>
       </h1>
       
-      <div className={styles.subtitle} >
+ <div className={styles.subtitle} >
         {' '}
        
         Full Stack Developer who likes to build stuff with &nbsp;
@@ -41,10 +42,16 @@ export default function Home() {
          </span>
         
         
+      
       </div>
+     
       <div className={styles.text}> &#128640; &nbsp;Exploring opportunities , side projects and new tech</div>
       <div className={styles.text}> &#127891; &nbsp; Currently a CSE Student at BMSIT</div>
     </div>
+    <div style={{display:'flex',alignItems:'center',textAlign:'center'}}>
+    <img style={{height:'30vh',width:'30vw',marginLeft:'5vw',marginTop:'10vh'}} src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt="" />
+       </div></div>
+    
     <div className={styles.container}>
     <div className={styles.buttons}>
       <button className={styles.buttonStyle}>

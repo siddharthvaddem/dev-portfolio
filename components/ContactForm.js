@@ -50,7 +50,8 @@ const ContactForm = () => {
       </div>
       <div style={{marginLeft:'5vw'}}>
       <h4>Message</h4>
-      <input type="text" placeholder="Your message or feedback" className={styles.inputMessage}/>
+      {/* <input type="text" placeholder="Your message or feedback" className={styles.inputMessage}/> */}
+      <textarea name="textarea" placeholder="Your message or feedback" className={styles.inputMessage}></textarea>
       </div>
     </div>
     <div className={styles.container}>
