@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 .container {
   max-width: 100vw;
   margin-left: 5vw;
@@ -127,6 +129,8 @@
   border-style: none;
   border-radius: 10px;
   color: white;
+  padding-left: 1vw;
+  font-family: 'Roboto Mono', monospace;
 }
 .inputMessage {
   background-color: black;
@@ -135,4 +139,6 @@
   border-style: none;
   border-radius: 10px;
   color: white;
+  padding-left: 1vw;
+  font-family: 'Roboto Mono', monospace;
 }

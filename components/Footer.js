@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className={styles.slash}>/</div>
           <div>
-          <Link href="https://github.com/siddharthvaddem">
+          <Link href="https://github.com/siddharthvaddem/dev-portfolio">
             <a className={styles.linkText} >
             Source
             </a>

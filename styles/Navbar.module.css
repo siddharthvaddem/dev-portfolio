@@ -12,12 +12,21 @@
   font-size: 3rem;
   color: #fff;
 }
-
+/* :hover.logo {
+  font-size: 3rem;
+  color: #11f9cf;
+}
+ */
 .altcol {
   color: #11f9cf;
   padding-left: 3px;
   padding-right: 3px;
 }
+/* :hover.altcol {
+  color: #fff;
+  padding-left: 3px;
+  padding-right: 3px;
+} */
 .navitems {
   display: flex;
   flex-direction: row;
@@ -43,3 +52,7 @@
   color: #11f9cf;
   font-weight: bolder;
 }
+
+/* .Typewriter {
+  width: 5vw;
+} */
