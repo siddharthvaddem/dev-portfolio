@@ -1,7 +1,51 @@
 import React from 'react'
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import { useState } from "react";
+
 const ContactForm = () => {
+
+  const [mailerState, setMailerState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  function handleStateChange(e) {
+    setMailerState((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  }
+  const submitEmail = async (e) => {
+    e.preventDefault();
+    console.log({ mailerState });
+    const response = await fetch("http://localhost:3001/send", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ mailerState }),
+    })
+      .then((res) => res.json())
+      .then(async (res) => {
+        const resData = await res;
+        console.log(resData);
+        if (resData.status === "success") {
+          alert("Message Sent");
+        } else if (resData.status === "fail") {
+          alert("Message failed to send");
+        }
+      })
+      .then(() => {
+        setMailerState({
+          email: "",
+          name: "",
+          message: "",
+        });
+      });
+  };
+
   return (
     <>
      <div className={styles.container}>
@@ -39,27 +83,50 @@ const ContactForm = () => {
        Or you can do <span className={styles.altcol}>this</span> 
       </div>
     </div>
-    <form >
-    <div className={styles.container} style={{display:'flex',flexDirection:'row'}}>
+    
+    <form
+       onSubmit={submitEmail}
+     >
+       <div className={styles.container} style={{display:'flex',flexDirection:'row'}}>
       <div >
-        <h4>Name</h4>
-        <input type="text" placeholder="Thomas Shelby" className={styles.input} />
-        <h4>Email</h4>
-        <input type="email" placeholder="peakyblinders@gmail.com" className={styles.input}/>
-        
-      </div>
-      <div style={{marginLeft:'5vw'}}>
+      <h4>Name</h4>
+         <input
+           placeholder="Thomas Shelby"
+           onChange={handleStateChange}
+           name="name"
+           value={mailerState.name}
+           className={styles.input}
+         />
+         <h4>Email</h4>
+         <input
+           placeholder="peakyblinders@gmail.com"
+           onChange={handleStateChange}
+           name="email"
+           value={mailerState.email}
+           className={styles.input}
+         />
+         </div>
+         <div style={{marginLeft:'5vw'}}>
       <h4>Message</h4>
-      {/* <input type="text" placeholder="Your message or feedback" className={styles.inputMessage}/> */}
-      <textarea name="textarea" placeholder="Your message or feedback" className={styles.inputMessage}></textarea>
-      </div>
-    </div>
-    <div className={styles.container}>
+        
+         <textarea
+           style={{ minHeight: "200px" }}
+           placeholder="Message"
+           onChange={handleStateChange}
+           name="message"
+           value={mailerState.message}
+           className={styles.inputMessage}
+         />
+         
+         </div>
+         </div>
+         <div className={styles.container}>
     <button className={styles.buttonStyle} style={{color:'#11f9cf'}}>Submit</button>
     </div>
-    </form>
+     </form>
     </>
   )
 }
 
 export default ContactForm
+
