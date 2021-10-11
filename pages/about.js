@@ -17,7 +17,7 @@ const about = () => {
         ideas into reality. I like building projects that make a difference . I also like building dumb-stupid projects that make no difference.
         <br /><br />
         Outside of coding, I enjoy playing badminton ,binging on movies/TV series and gaming .
-        Feel free to reach me out <span className={styles.altcol}> here</span>.
+        Feel free to reach  out to me <span className={styles.altcol}> here</span>.
       </div>
       <div style={{width:'30%'}}>
       <img style={{height:'30vh',width:'30vw'}} src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt="" />

@@ -22,9 +22,9 @@ const Navbar = () => {
             <i style={{ fontSize: '24px' }} class="bi bi-brightness-high-fill  " />
           </div>
           <div style={{ marginLeft: '5vw' }} /> {/*spacing */}
-          <div>
+          {/* <div>
             <i style={{ fontSize: '24px' }} class="bi bi-list" />
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
