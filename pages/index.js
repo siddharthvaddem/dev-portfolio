@@ -81,6 +81,7 @@ export default function Home() {
     </span></div>
     </div>
     <Tools/>
+    <div style={{marginTop:'15vh'}}></div>
 
     <div className={styles.container}>
       <h1 className={styles.title}>
@@ -92,11 +93,14 @@ export default function Home() {
         Here's some of my projects that I have worked on.
       </div>
       <div className={styles.description} >
-      <Link href="/projects"><a style={{color:'#11f9cf'}}> Explore more<i class="bi bi-arrow-right"></i></a></Link>
+      <Link href="/projects"><a className={styles.altcol}> Explore more<i class="bi bi-arrow-right"></i></a></Link>
       
         </div>
         </div>
+        
     <Projects/>
+    <div style={{marginTop:'10vh'}}></div>
+
     
     <ContactForm/>
     </>

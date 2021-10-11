@@ -18,7 +18,7 @@
 }
  */
 .altcol {
-  color: #11f9cf;
+  color: var(--color-text-secondary);
   padding-left: 3px;
   padding-right: 3px;
 }
@@ -35,21 +35,21 @@
 }
 .linkText {
   font-weight: 700;
-  color: black;
+  color: var(--color-bg-toggle);
 }
 
-.containerwhite {
+.containerAlt {
   width: 100%;
-
-  background-color: white;
-  color: black;
+  height: 10vh;
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-toggle);
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .slash {
   margin-left: 1vw;
-  color: #11f9cf;
+  color: var(--color-text-secondary);
   font-weight: bolder;
 }
 

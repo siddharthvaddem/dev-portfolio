@@ -34,7 +34,7 @@ const ContactForm = () => {
         if (resData.status === "success") {
           alert("Message Sent");
         } else if (resData.status === "fail") {
-          alert("Message failed to send");
+          alert("Message failed to send. Try other means of communication");
         }
       })
       .then(() => {
@@ -55,7 +55,7 @@ const ContactForm = () => {
       </h1>
       <div className={styles.subtitle} style={{marginBottom:'2vh'}}>
         {' '}
-        Have a <span className={styles.altcol}>question</span> ? Just want to say Hi? Reach out!.
+        Have a <span className={styles.altcol}>question</span> ? Just want to say Hi? Reach out!
       </div>
       
       
@@ -121,7 +121,7 @@ const ContactForm = () => {
          </div>
          </div>
          <div className={styles.container}>
-    <button className={styles.buttonStyle} style={{color:'#11f9cf'}}>Submit</button>
+    <button className={styles.buttonStyle} >Submit</button>
     </div>
      </form>
     </>

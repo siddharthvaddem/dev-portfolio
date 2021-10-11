@@ -1,15 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+body,
+body[data-theme="light"] {
+  --color-text-primary: #000000;
+  --color-text-secondary: #3371ff;
+  --color-bg-primary: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(238, 235, 235, 1) 100%);
+  --color-bg-toggle: #eeebeb;
+  --color-grid: rgba(0, 0, 0, 0.03);
+  --color-button: rgba(0, 0, 0, 0.03);
+}
+
+body[data-theme="dark"] {
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #11f9cf;
+  --color-bg-primary: linear-gradient(90deg, rgba(9, 17, 34, 1) 0%, rgba(13, 31, 41, 1) 72%, rgba(5, 31, 74, 1) 100%);
+  --color-bg-toggle: #000000;
+  --color-grid: rgba(155, 150, 150, 0.13);
+  --color-button: #000000;
+}
 
 body {
-  color: #fff;
-
   font-family: 'Montserrat', sans-serif;
-
-  background: rgb(9, 17, 34);
-  background: linear-gradient(90deg, rgba(9, 17, 34, 1) 0%, rgba(13, 31, 41, 1) 72%, rgba(5, 31, 74, 1) 100%);
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: sans-serif;
+  transition: background 0.25s ease-in-out;
 }
+
+h1 {
+  color: var(--color-text-primary);
+}
+
 a {
-  color: #fff;
+  color: var(--color-text-primary);
   text-decoration: none;
 }
 
@@ -29,15 +51,10 @@ footer {
   text-align: center;
   padding: 30px 0;
   margin-top: 60px;
-  color: #fff;
-  border-top: 1px solid #eaeaea;
+  color: var(--color-bg-toggle);
 }
 ::placeholder {
   color: grey;
   opacity: 70%;
   padding-left: 10px;
 }
-
-/* i {
-  color: #11f9cf;
-} */

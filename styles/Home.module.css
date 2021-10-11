@@ -10,25 +10,25 @@
   margin-left: 5vw;
 }
 .title {
-  color: #fff;
+  color: var(--color-text-primary);
   font-size: 5rem;
   font-weight: bolder;
   margin-bottom: 5vh;
 }
 .subtitle {
-  color: #fff;
+  color: var(--color-text-primary);
   margin-bottom: 5vh;
   font-size: 1.5rem;
   font-weight: bold;
 }
 .text {
-  color: #fff;
+  color: var(--color-text-primary);
   margin-top: 2vh;
   font-size: 1.5rem;
   font-weight: bold;
 }
 .linktext {
-  color: #fff;
+  color: var(--color-text-primary);
   margin-top: 2vh;
   font-size: 1rem;
   font-weight: bold;
@@ -48,16 +48,16 @@
   margin: 20px 10px;
   font-weight: bold;
   border-radius: 4px;
-  color: white;
-  background: black;
+  color: var(--color-text-primary);
+  background: var(--color-button);
 }
 
 .altcol {
-  color: #11f9cf;
+  color: var(--color-text-secondary);
 }
 
 .buttonStyle > i {
-  color: #11f9cf;
+  color: var(--color-text-secondary);
 }
 
 .gridcontainer {
@@ -87,7 +87,7 @@
     margin: 5px;
   }
   .griditem {
-    background-color: rgba(220, 220, 220, 0.17);
+    background-color: var(--color-grid);
 
     padding: 20px;
     display: flex;
@@ -120,29 +120,29 @@
 }
 
 .abouttext {
-  color: #fff;
+  color: var(--color-text-primary);
   margin-bottom: 5vh;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 .input {
-  background-color: black;
+  background-color: var(--color-bg-toggle);
   width: 20vmax;
   height: 5vh;
   border-style: none;
   border-radius: 10px;
-  color: white;
+  color: var(--color-text-primary);
   padding-left: 1vw;
   font-family: 'Roboto Mono', monospace;
 }
 .inputMessage {
-  background-color: black;
+  background-color: var(--color-bg-toggle);
   width: 60vw;
   height: 20vh;
   border-style: none;
   border-radius: 10px;
-  color: white;
+  color: var(--color-text-primary);
   padding-left: 1vw;
   padding-top: 1vh;
   font-family: 'Roboto Mono', monospace;
@@ -157,7 +157,7 @@
   margin-right: 10vw;
 }
 .projectgriditem {
-  background-color: rgba(155, 150, 150, 0.13);
+  background-color: var(--color-grid);
   height: 20vh;
 
   display: flex;
@@ -181,7 +181,7 @@
   width: 50%;
   margin-top: 1vh;
   text-align: center;
-  color: white;
+  color: var(--color-text-primary);
 }
 .marginLinksingle {
   margin-top: 2vh;
@@ -194,5 +194,5 @@
   width: 100%;
   margin-top: 1vh;
   text-align: center;
-  color: white;
+  color: var(--color-text-primary);
 }

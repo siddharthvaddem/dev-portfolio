@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
     <nav style={{marginTop:'20vh'}}>
-      <div className={styles.containerwhite}>
+      <div className={styles.containerAlt}>
         <div>
           <h4 style={{marginLeft:'5vw'}}>&copy; &nbsp;Siddharth Vaddem 2021</h4>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/Navbar.module.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   return (
@@ -18,13 +19,8 @@ const Navbar = () => {
           </h1>
         </div>
         <div className={styles.navitems}>
-          <div>
-            <i style={{ fontSize: '24px' }} class="bi bi-brightness-high-fill  " />
-          </div>
           <div style={{ marginLeft: '5vw' }} /> {/*spacing */}
-          {/* <div>
-            <i style={{ fontSize: '24px' }} class="bi bi-list" />
-          </div> */}
+          <ThemeToggle />
         </div>
       </div>
     </nav>
