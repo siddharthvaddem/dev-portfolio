@@ -3,11 +3,11 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 import Image from 'next/image'
 import { useState,useEffect } from 'react';
-import UseWindowDimensions from '../components/UseWindowDimensions.ts';
+import useWindowDimensions from '../components/useWindowDimensions.ts';
 const about = () => {
   
   
- const { width } = UseWindowDimensions();
+ const { width } = useWindowDimensions();
 
  var mobile;
  if(width<= 420)

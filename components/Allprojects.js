@@ -3,10 +3,10 @@ import styles from '../styles/Home.module.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Link from 'next/link';
 import { useState,useEffect } from 'react';
-import UseWindowDimensions from './UseWindowDimensions.ts';
+import useWindowDimensions from './useWindowDimensions.ts';
 const Allprojects = () => {
   
-  const { width } = UseWindowDimensions();
+  const { width } = useWindowDimensions();
  
     
 

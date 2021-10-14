@@ -14,7 +14,7 @@ import HeroMobile from '../components/HeroMobile.js';
 import Buttons from '../components/Buttons.js';
 import ButtonsMobile from '../components/ButtonsMobile.js';
 import ProjectsMobile from '../components/ProjectsMobile.js';
-import UseWindowDimensions from '../components/UseWindowDimensions.ts';
+import useWindowDimensions from '../components/useWindowDimensions.ts';
 
 
 
@@ -22,7 +22,7 @@ import UseWindowDimensions from '../components/UseWindowDimensions.ts';
 export default function Home() {
 
     
-    const { width } = UseWindowDimensions();
+    const { width } = useWindowDimensions();
   
     
    var mobile;

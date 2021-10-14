@@ -3,9 +3,9 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import { useState, useEffect } from 'react';
 import FooterMobile from './FooterMobile';
-import UseWindowDimensions from './UseWindowDimensions.ts';
+import useWindowDimensions from './useWindowDimensions.ts';
 const Layout = ({ children }) => {
-  const { width } = UseWindowDimensions();
+  const { width } = useWindowDimensions();
   var mobile;
   if (width <= 420) mobile = true;
   else mobile = false;
