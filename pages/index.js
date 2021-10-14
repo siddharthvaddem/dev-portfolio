@@ -15,6 +15,8 @@ import Buttons from '../components/Buttons.js';
 import ButtonsMobile from '../components/ButtonsMobile.js';
 import ProjectsMobile from '../components/ProjectsMobile.js';
 import useWindowDimensions from '../components/useWindowDimensions.ts';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ToolsMobile from '../components/ToolsMobile.js';
 
 
 
@@ -47,7 +49,8 @@ export default function Home() {
    
     </span></div>
     </div>
-    {/* <Tools/> */}
+    
+    {width>700 ? <Tools/>:<ToolsMobile/>} {/*for some reason doesnt work on mobile width */}
     <div style={{marginTop:mobile?'10vh':'15vh'}}></div>
 
     <div className={styles.container}>
@@ -60,7 +63,7 @@ export default function Home() {
         Here's some of my projects that I have worked on.
       </div>
       <div className={styles.description} style={{textAlign:mobile&&'center'}} >
-      <Link href="/projects"><a className={styles.altcol} > Explore more<i className="bi bi-arrow-right"></i></a></Link>
+      <Link href="/projects"><a className={styles.altcol} > Explore more <ArrowRightAltIcon style={{verticalAlign:'middle'}}/> </a></Link>
       
         </div>
         </div>

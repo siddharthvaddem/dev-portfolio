@@ -2,7 +2,9 @@
 //https://electricanimals.com/articles/next-js-dark-mode-toggle
 
 import styled from '@emotion/styled';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import { useState, useEffect } from 'react';
+import Brightness3Icon from '@mui/icons-material/Brightness3';
 
 const ToggleButton = styled.button`
   --toggle-width: 80px;
@@ -67,10 +69,10 @@ const ThemeToggle = () => {
     <ToggleButton type="button" onClick={() => setActiveTheme(inactiveTheme)}>
       <ToggleThumb activeTheme={activeTheme} />
       <span aria-hidden={true}>
-        <i style={{ fontSize: '24px', color: 'white' }} className="bi bi-brightness-high-fill  " />
+        <WbSunnyIcon style={{ fontSize: '24px', color: 'white' }} />
       </span>
       <span aria-hidden={true}>
-        <i style={{ fontSize: '24px', color: 'black' }} className="bi bi-moon-fill" />
+        <Brightness3Icon style={{ fontSize: '24px', color: 'black' }} />
       </span>
     </ToggleButton>
   );

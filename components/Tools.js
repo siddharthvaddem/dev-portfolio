@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
+import FlashOnIcon from '@mui/icons-material/FlashOn';
 const Tools = () => {
   return (
     <>
@@ -8,7 +9,7 @@ const Tools = () => {
     <div style={{marginTop:'15vh'}}>{/*spacing */}</div>
     <div className={styles.subtitle}>
         {' '}
-        <i className="bi bi-lightning-fill" style={{color:'yellow'}}></i><span className={styles.altcol}> &nbsp;Tech</span> I'm familiar with or have worked with in the past
+       <FlashOnIcon style={{color:'yellow'}}/><span className={styles.altcol}> &nbsp;Tech</span> I'm familiar with or have worked with in the past
       </div>
       <div className={styles.gridcontainer}>
         <div className={styles.griditem}>
