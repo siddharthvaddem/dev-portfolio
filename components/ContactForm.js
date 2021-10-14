@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-import { useState } from "react";
-
+import { useState,useEffect } from "react";
+import Buttons from './Buttons';
+import ButtonsMobile from './ButtonsMobile';
+import useWindowDimensions from './useWindowDimensions.ts';
 const ContactForm = () => {
 
   const [mailerState, setMailerState] = useState({
@@ -45,15 +47,27 @@ const ContactForm = () => {
         });
       });
   };
+  const { width} = useWindowDimensions();
+  
+  
+
+ var mobile;
+ if(width<=420)
+ mobile=true;
+ else mobile=false;
+ //console.log(mobile)
 
   return (
+
+    
+    
     <>
      <div className={styles.container}>
-      <h1 className={styles.title}>
+      <h1 className={mobile?styles.titlemobile:styles.title}>
         {' '}
         let's talk<span className={styles.altcol}>.</span>
       </h1>
-      <div className={styles.subtitle} style={{marginBottom:'2vh'}}>
+      <div className={mobile?styles.subtitlemobile:styles.subtitle} style={{marginBottom:'2vh'}}>
         {' '}
         Have a <span className={styles.altcol}>question</span> ? Just want to say Hi? Reach out!
       </div>
@@ -61,24 +75,8 @@ const ContactForm = () => {
       
     </div>
     <div className={styles.container}>
-    <div className={styles.buttons}>
-      <button className={styles.buttonStyle}>
-      <Link href="https://github.com/siddharthvaddem">
-        <a className={styles.buttonStyle} target="_blank">Github <i class="bi bi-github"></i></a>
-      </Link>
-      
-       </button>
-      <button className={styles.buttonStyle}>
-      <Link href="https://www.linkedin.com/in/siddharthvaddem/">
-      <a className={styles.buttonStyle} target="_blank">LinkedIn <i class="bi bi-linkedin"></i>
-      </a></Link>
-      
-      </button>
-      <button className={styles.buttonStyle}>
-      <Link href="mailto:siddharthvaddem5@gmail.com">
-      <a className={styles.buttonStyle} target="_blank">Email <i class="bi bi-envelope-fill"></i></a></Link> </button>
-    </div>
-    <div className={styles.description} style={{marginBottom:'2vh'}}>
+    {!mobile ?<Buttons/>:<ButtonsMobile/>}
+    <div className={styles.description} style={{marginBottom:'2vh',textAlign:mobile&&'center'}}>
         {' '}
        Or you can do <span className={styles.altcol}>this</span> 
       </div>
@@ -88,7 +86,7 @@ const ContactForm = () => {
        onSubmit={submitEmail}
      >
        <div className={styles.container} style={{display:'flex',flexDirection:'row'}}>
-      <div >
+      <div style={{width:'100%'}} >
       <h4>Name</h4>
          <input
            placeholder="Thomas Shelby"
@@ -105,20 +103,18 @@ const ContactForm = () => {
            value={mailerState.email}
            className={styles.input}
          />
-         </div>
-         <div style={{marginLeft:'5vw'}}>
-      <h4>Message</h4>
+         <h4>Message</h4>
         
-         <textarea
-           style={{ minHeight: "200px" }}
-           placeholder="Message"
-           onChange={handleStateChange}
-           name="message"
-           value={mailerState.message}
-           className={styles.inputMessage}
-         />
-         
+        <textarea
+          style={{ minHeight: "100px" }}
+          placeholder="Message"
+          onChange={handleStateChange}
+          name="message"
+          value={mailerState.message}
+          className={styles.inputMessage}
+        />
          </div>
+        
          </div>
          <div className={styles.container}>
     <button className={styles.buttonStyle} >Submit</button>

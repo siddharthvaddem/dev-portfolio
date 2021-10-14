@@ -33,11 +33,20 @@
   margin-right: 2vw;
   margin-left: auto;
 }
+.navitemsmobile {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2vw;
+  margin: auto;
+}
 .linkText {
   font-weight: 700;
   color: var(--color-bg-toggle);
 }
-
+.linkTextmobile {
+  font-weight: 200;
+  color: var(--color-bg-toggle);
+}
 .containerAlt {
   width: 100%;
   height: 10vh;

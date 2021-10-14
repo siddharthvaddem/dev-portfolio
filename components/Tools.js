@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 const Tools = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const Tools = () => {
       <div className={styles.gridcontainer}>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="html.png" className={styles.icons} />
+            <Image src="/html.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>HTML5. CSS. Javascript</div>
@@ -21,7 +22,7 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="react.png" className={styles.icons} />
+          <Image src="/react.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>ReactJS</div>
@@ -30,7 +31,7 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="figma.png" className={styles.icons} />
+          <Image src="/figma.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>Figma | Adobe Illustrator</div>
@@ -39,7 +40,7 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="git.png" className={styles.icons} />
+          <Image src="/git.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>Git/Github</div>
@@ -48,7 +49,7 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="node.png" className={styles.icons} />
+          <Image src="/node.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>NodeJS.MongoDB.Express</div>
@@ -57,7 +58,7 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="graphql.png" className={styles.icons} />
+          <Image src="/graphql.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>GraphQL and REST</div>
@@ -66,7 +67,7 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="firebase.png" className={styles.icons} />
+          <Image src="/firebase.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>Firebase</div>
@@ -75,7 +76,7 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="c++.png" className={styles.icons} />
+          <Image src="/c++.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>C++ | C | Java</div>
@@ -84,7 +85,7 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="nextjs.png" className={styles.nextjsicon} />
+          <Image src="/nextjs.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>NextJS | Gatsby</div>
@@ -93,7 +94,7 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="python.png" className={styles.icons} />
+          <Image src="/python.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>Python Development</div>
@@ -102,7 +103,7 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-            <img src="solidity.png" className={styles.icons} />
+          <Image src="/solidity.png" width={50} height={50} layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>Solidity | TruffleJS | Ganche</div>
