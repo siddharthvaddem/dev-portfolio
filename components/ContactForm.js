@@ -22,31 +22,35 @@ const ContactForm = () => {
   const submitEmail = async (e) => {
     e.preventDefault();
     console.log({ mailerState });
-    const response = await fetch("http://localhost:3001/send", {
-      method: "POST",
+   //alert("Message sent")
+    const response=await fetch('/api/contact', {
+      method: 'POST',
       headers: {
-        "Content-type": "application/json",
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ mailerState }),
+      body: JSON.stringify({mailerState})
+    })  .then((res) => res.json())
+    .then(async (res) => {
+      const resData = await res;
+      console.log(resData);
+      if (resData.status === "success") {
+        alert("Message Sent");
+      } else if (resData.status === "fail") {
+        alert("Message failed to send");
+      }
     })
-      .then((res) => res.json())
-      .then(async (res) => {
-        const resData = await res;
-        console.log(resData);
-        if (resData.status === "success") {
-          alert("Message Sent");
-        } else if (resData.status === "fail") {
-          alert("Message failed to send. Try other means of communication");
-        }
-      })
-      .then(() => {
-        setMailerState({
-          email: "",
-          name: "",
-          message: "",
-        });
+    .then(() => {
+      setMailerState({
+        email: "",
+        name: "",
+        message: "",
       });
-  };
+    });
+};
+      
+   
+  
   const { width} = useWindowDimensions();
   
   
