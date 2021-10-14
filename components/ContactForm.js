@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState,useEffect } from "react";
 import Buttons from './Buttons';
 import ButtonsMobile from './ButtonsMobile';
-import useWindowDimensions from './useWindowDimensions.ts';
+import UseWindowDimensions from './UseWindowDimensions.ts';
 const ContactForm = () => {
 
   const [mailerState, setMailerState] = useState({
@@ -51,7 +51,7 @@ const ContactForm = () => {
       
    
   
-  const { width} = useWindowDimensions();
+  const { width} = UseWindowDimensions();
   
   
 

@@ -3,11 +3,11 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 import Image from 'next/image'
 import { useState,useEffect } from 'react';
-import useWindowDimensions from '../components/useWindowDimensions.ts';
+import UseWindowDimensions from '../components/UseWindowDimensions.ts';
 const about = () => {
   
   
- const { width } = useWindowDimensions();
+ const { width } = UseWindowDimensions();
 
  var mobile;
  if(width<= 420)
@@ -33,10 +33,10 @@ const about = () => {
       </div>
       {!mobile ?<div style={{width:'30%',marginLeft:'5vw',marginTop:'-5vh'}}>
       {/* <img style={{height:'30vh',width:'30vw'}} src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt="" /> */}
-      <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" height="300" width="250" layout="intrinsic" ></Image>
+      <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt=".." height="300" width="250" layout="intrinsic" ></Image>
       </div>:
       <div style={{width:'100%',textAlign:'center'}}>
-      <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" height="300" width="250" layout="intrinsic" ></Image>
+      <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt=".." height="300" width="250" layout="intrinsic" ></Image>
       
       </div>
       }

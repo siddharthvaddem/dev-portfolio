@@ -14,7 +14,7 @@ import HeroMobile from '../components/HeroMobile.js';
 import Buttons from '../components/Buttons.js';
 import ButtonsMobile from '../components/ButtonsMobile.js';
 import ProjectsMobile from '../components/ProjectsMobile.js';
-import useWindowDimensions from '../components/useWindowDimensions.ts';
+import UseWindowDimensions from '../components/UseWindowDimensions.ts';
 
 
 
@@ -22,7 +22,7 @@ import useWindowDimensions from '../components/useWindowDimensions.ts';
 export default function Home() {
 
     
-    const { width } = useWindowDimensions();
+    const { width } = UseWindowDimensions();
   
     
    var mobile;
@@ -60,7 +60,7 @@ export default function Home() {
         Here's some of my projects that I have worked on.
       </div>
       <div className={styles.description} style={{textAlign:mobile&&'center'}} >
-      <Link href="/projects"><a className={styles.altcol} > Explore more<i class="bi bi-arrow-right"></i></a></Link>
+      <Link href="/projects"><a className={styles.altcol} > Explore more<i className="bi bi-arrow-right"></i></a></Link>
       
         </div>
         </div>

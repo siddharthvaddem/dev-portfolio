@@ -41,7 +41,7 @@ const Hero = () => {
       <div className={styles.text}> &#127891; &nbsp; Currently a CSE Student at BMSIT</div>
       </div>
       <div style={{display:'flex',alignItems:'center',textAlign:'center',marginLeft:'10vw',marginTop:'5vh'}}>
-      <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" height="300" width="250" layout="intrinsic" ></Image>
+      <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt=".." height="300" width="250" layout="intrinsic" ></Image>
        </div>
        
        </div>

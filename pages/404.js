@@ -20,6 +20,7 @@ const NotFound = () => {
           src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad"
           height="300"
           width="250"
+          alt=".."
           layout="intrinsic"
         />
       </div>

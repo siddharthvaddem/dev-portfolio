@@ -42,7 +42,7 @@ const HeroMobile = () => {
       <div className={styles.textmobile}> &#127891; &nbsp; Currently a CSE Student at BMSIT</div>
       </div>
       <div style={{display:'flex',alignItems:'center',textAlign:'center',margin:'auto',marginTop:'2vh'}}>
-      <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" height="300" width="250" ></Image>
+      <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt=".." height="300" width="250" ></Image>
        </div>
        
        </div>

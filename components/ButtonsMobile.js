@@ -8,19 +8,19 @@ const ButtonsMobile = () => {
     <div className={styles.buttonsmobile}>
       <button className={styles.buttonStylemobile}>
       <Link href="https://github.com/siddharthvaddem" >
-        <a className={styles.buttonStyle} target="_blank"> <i class="bi bi-github"></i></a>
+        <a className={styles.buttonStyle} target="_blank"> <i className="bi bi-github"></i></a>
       </Link>
       
        </button>
       <button className={styles.buttonStylemobile}>
       <Link href="https://www.linkedin.com/in/siddharthvaddem/">
-      <a className={styles.buttonStyle} target="_blank"> <i class="bi bi-linkedin"></i>
+      <a className={styles.buttonStyle} target="_blank"> <i className="bi bi-linkedin"></i>
       </a></Link>
       
       </button>
       <button className={styles.buttonStylemobile}>
       <Link href="mailto:siddharthvaddem5@gmail.com">
-      <a className={styles.buttonStyle} target="_blank"><i class="bi bi-envelope-fill"></i></a></Link> </button>
+      <a className={styles.buttonStyle} target="_blank"><i className="bi bi-envelope-fill"></i></a></Link> </button>
     </div>
     </div>
     </>

@@ -67,10 +67,10 @@ const ThemeToggle = () => {
     <ToggleButton type="button" onClick={() => setActiveTheme(inactiveTheme)}>
       <ToggleThumb activeTheme={activeTheme} />
       <span aria-hidden={true}>
-        <i style={{ fontSize: '24px', color: 'white' }} class="bi bi-brightness-high-fill  " />
+        <i style={{ fontSize: '24px', color: 'white' }} className="bi bi-brightness-high-fill  " />
       </span>
       <span aria-hidden={true}>
-        <i style={{ fontSize: '24px', color: 'black' }} class="bi bi-moon-fill" />
+        <i style={{ fontSize: '24px', color: 'black' }} className="bi bi-moon-fill" />
       </span>
     </ToggleButton>
   );
