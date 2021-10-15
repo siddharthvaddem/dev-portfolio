@@ -4,9 +4,9 @@ body[data-theme="light"] {
   --color-text-primary: #000000;
   --color-text-secondary: #3371ff;
   --color-bg-primary: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(238, 235, 235, 1) 100%);
-  --color-bg-toggle: #eeebeb;
+  --color-bg-toggle: #d1cfcf;
   --color-grid: rgba(0, 0, 0, 0.03);
-  --color-button: rgba(0, 0, 0, 0.03);
+  --color-button: rgba(0, 0, 0, 0.05);
 }
 
 body[data-theme="dark"] {

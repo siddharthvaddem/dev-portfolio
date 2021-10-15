@@ -11,16 +11,18 @@ const Tools = () => {
         {' '}
        <FlashOnIcon style={{color:'yellow'}}/><span className={styles.altcol}> &nbsp;Tech</span> I'm familiar with or have worked with in the past
       </div>
+      
       <div className={styles.gridcontainer}>
-        <div className={styles.griditem}>
+      <div className={styles.griditem}>
           <div className={styles.images}>
-            <Image src="/html.png" width={50} height={50} alt=".." layout="intrinsic"></Image>
+          <Image src="/figma.png" width={50} height={50} alt=".." layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
-          <div>HTML5. CSS. Javascript</div>
-          <p className={styles.subdescription}>Fundamental Web Development</p>
+          <div>Figma | Adobe Illustrator</div>
+          <p className={styles.subdescription}>UI Design and Mockups</p>
           </div>
         </div>
+        
         <div className={styles.griditem}>
           <div className={styles.images}>
           <Image src="/react.png" width={50} height={50}  alt=".." layout="intrinsic"></Image>
@@ -32,13 +34,14 @@ const Tools = () => {
         </div>
         <div className={styles.griditem}>
           <div className={styles.images}>
-          <Image src="/figma.png" width={50} height={50} alt=".." layout="intrinsic"></Image>
+            <Image src="/html.png" width={50} height={50} alt=".." layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
-          <div>Figma | Adobe Illustrator</div>
-          <p className={styles.subdescription}>UI Design and Mockups</p>
+          <div>HTML5. CSS. Javascript</div>
+          <p className={styles.subdescription}>Web Development fundamentals</p>
           </div>
         </div>
+        
         <div className={styles.griditem}>
           <div className={styles.images}>
           <Image src="/git.png" width={50} height={50} alt=".." layout="intrinsic"></Image>

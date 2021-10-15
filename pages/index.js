@@ -41,8 +41,8 @@ export default function Home() {
     { !mobile ?<Hero/>:<HeroMobile/>}
     {!mobile? <Buttons/>:<ButtonsMobile/>}
     <div className={styles.container}>
-    <div className={styles.linktext} style={{textAlign:mobile&&'center'}}>  Find my resume <span className={styles.altcol}>here.</span></div>
-    <div className={styles.linktext} style={{textAlign:mobile&&'center'}}>  More about me <span >
+    <div className={styles.linktext} style={{textAlign:mobile&&'center'}}>  Find his resume <span className={styles.altcol}>here.</span></div>
+    <div className={styles.linktext} style={{textAlign:mobile&&'center'}}>  More about siddharth <span >
     <Link href="/about">
       <a className={styles.altcol}> here.</a>
     </Link>

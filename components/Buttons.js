@@ -12,19 +12,19 @@ const Buttons = () => {
     <div className={styles.buttons}>
       <button className={styles.buttonStyle}>
       <Link href="https://github.com/siddharthvaddem" >
-        <a className={styles.buttonStyle} style={{verticalAlign:'middle'}} target="_blank">Github <GitHubIcon style={{verticalAlign:'middle'}} className={styles.altcol}/></a>
+        <a  style={{verticalAlign:'middle'}} target="_blank">Github <GitHubIcon style={{verticalAlign:'middle'}} className={styles.altcol}/></a>
       </Link>
       
        </button>
       <button className={styles.buttonStyle}>
       <Link href="https://www.linkedin.com/in/siddharthvaddem/">
-      <a className={styles.buttonStyle} style={{verticalAlign:'middle'}} target="_blank">LinkedIn <LinkedInIcon style={{verticalAlign:'middle'}} className={styles.altcol}/>
+      <a  style={{verticalAlign:'middle'}} target="_blank">LinkedIn <LinkedInIcon style={{verticalAlign:'middle'}} className={styles.altcol}/>
       </a></Link>
       
       </button>
       <button className={styles.buttonStyle}>
       <Link href="mailto:siddharthvaddem5@gmail.com">
-      <a className={styles.buttonStyle} style={{verticalAlign:'middle'}} target="_blank">Email <EmailIcon style={{verticalAlign:'middle'}} className={styles.altcol}/></a></Link> </button>
+      <a  style={{verticalAlign:'middle'}} target="_blank">Email <EmailIcon style={{verticalAlign:'middle'}} className={styles.altcol}/></a></Link> </button>
     </div>
     </div>
     </>

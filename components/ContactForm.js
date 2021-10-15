@@ -7,47 +7,47 @@ import ButtonsMobile from './ButtonsMobile';
 import useWindowDimensions from './useWindowDimensions.ts';
 const ContactForm = () => {
 
-  const [mailerState, setMailerState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+//   const [mailerState, setMailerState] = useState({
+//     name: "",
+//     email: "",
+//     message: "",
+//   });
 
-  function handleStateChange(e) {
-    setMailerState((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.value,
-    }));
-  }
-  const submitEmail = async (e) => {
-    e.preventDefault();
-    console.log({ mailerState });
-   //alert("Message sent")
-    const response=await fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({mailerState})
-    })  .then((res) => res.json())
-    .then(async (res) => {
-      const resData = await res;
-      console.log(resData);
-      if (resData.status === "success") {
-        alert("Message Sent");
-      } else if (resData.status === "fail") {
-        alert("Message failed to send");
-      }
-    })
-    .then(() => {
-      setMailerState({
-        email: "",
-        name: "",
-        message: "",
-      });
-    });
-};
+//   function handleStateChange(e) {
+//     setMailerState((prevState) => ({
+//       ...prevState,
+//       [e.target.name]: e.target.value,
+//     }));
+//   }
+//   const submitEmail = async (e) => {
+//     e.preventDefault();
+//     console.log({ mailerState });
+//    //alert("Message sent")
+//     const response=await fetch('/api/contact', {
+//       method: 'POST',
+//       headers: {
+//         'Accept': 'application/json, text/plain, */*',
+//         'Content-Type': 'application/json'
+//       },
+//       body: JSON.stringify({mailerState})
+//     })  .then((res) => res.json())
+//     .then(async (res) => {
+//       const resData = await res;
+//       console.log(resData);
+//       if (resData.status === "success") {
+//         alert("Message Sent");
+//       } else if (resData.status === "fail") {
+//         alert("Message failed to send");
+//       }
+//     })
+//     .then(() => {
+//       setMailerState({
+//         email: "",
+//         name: "",
+//         message: "",
+//       });
+//     });
+// };
       
    
   
@@ -63,8 +63,6 @@ const ContactForm = () => {
 
   return (
 
-    
-    
     <>
      <div className={styles.container}>
       <h1 className={mobile?styles.titlemobile:styles.title}>
@@ -73,14 +71,14 @@ const ContactForm = () => {
       </h1>
       <div className={mobile?styles.subtitlemobile:styles.subtitle} style={{marginBottom:'2vh'}}>
         {' '}
-        Have a <span className={styles.altcol}>question</span> ? Just want to say Hi? Reach out!
+        Have a <span className={styles.altcol}>question</span>? Just want to say Hi? Reach out!
       </div>
       
       
     </div>
     <div className={styles.container}>
     {!mobile ?<Buttons/>:<ButtonsMobile/>}
-    <div className={styles.description} style={{marginBottom:'2vh',textAlign:mobile&&'center'}}>
+    {/* <div className={styles.description} style={{marginBottom:'2vh',textAlign:mobile&&'center'}}>
         {' '}
        Or you can do <span className={styles.altcol}>this</span> 
       </div>
@@ -123,7 +121,8 @@ const ContactForm = () => {
          <div className={styles.container}>
     <button className={styles.buttonStyle} >Submit</button>
     </div>
-     </form>
+     </form> */}
+     </div>
     </>
   )
 }

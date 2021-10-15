@@ -38,8 +38,8 @@ const HeroMobile = () => {
       
       </div>
      
-      <div className={styles.textmobile}> &#128640; &nbsp;Exploring new opportunities </div>
-      <div className={styles.textmobile}> &#127891; &nbsp; Currently a CSE Student at BMSIT</div>
+      <div className={styles.textmobile}>&#128640;&nbsp;Exploring new opportunities </div>
+      <div className={styles.textmobile}>&#127891;&nbsp;Currently a CSE Student at BMSIT</div>
       </div>
       <div style={{display:'flex',alignItems:'center',textAlign:'center',margin:'auto',marginTop:'2vh'}}>
       <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt=".." height="300" width="250" ></Image>

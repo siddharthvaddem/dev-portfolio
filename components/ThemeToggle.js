@@ -5,6 +5,7 @@ import styled from '@emotion/styled';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import { useState, useEffect } from 'react';
 import Brightness3Icon from '@mui/icons-material/Brightness3';
+//import Brightness2Icon from '@mui/icons-material/Brightness2';
 
 const ToggleButton = styled.button`
   --toggle-width: 80px;

@@ -40,7 +40,7 @@
   margin: auto;
 }
 .linkText {
-  font-weight: 700;
+  font-weight: 400;
   color: var(--color-bg-toggle);
 }
 .linkTextmobile {

@@ -94,7 +94,7 @@ const Allprojects = () => {
 
 
         <div  className={mobile?styles.projectgriditemmobile:styles.projectgriditem} style={{display:'flex',flexDirection:'column'}}>
-        <div className={styles.description}>Ttile</div>
+        <div className={styles.description}>Title</div>
          <p className={styles.subdescription}>Description</p>
           <div className={styles.altcol} style={{marginTop:'1vh'}}>
             Tools | Tools
@@ -108,7 +108,7 @@ const Allprojects = () => {
         
       
         <div  className={mobile?styles.projectgriditemmobile:styles.projectgriditem} style={{display:'flex',flexDirection:'column'}}>
-        <div className={styles.description}>Ttile</div>
+        <div className={styles.description}>Title</div>
          <p className={styles.subdescription}>Description</p>
           <div className={styles.altcol} style={{marginTop:'1vh'}}>
             Tools | Tools
@@ -123,7 +123,7 @@ const Allprojects = () => {
 
 
         <div className={styles.projectgriditem} style={{display:'flex',flexDirection:'column'}}>
-        <div className={styles.description}>Ttile</div>
+        <div className={styles.description}>Title</div>
          <p className={styles.subdescription}>Description</p>
           <div className={styles.altcol} style={{marginTop:'1vh'}}>
             Tools | Tools

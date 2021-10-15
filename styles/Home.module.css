@@ -112,7 +112,7 @@
   margin: 10px;
 }
 .griditem {
-  background-color: rgba(220, 220, 220, 0.17);
+  background-color: var(--color-grid);
   height: 8vh;
   display: flex;
   flex-direction: row;
@@ -153,7 +153,7 @@
 }
 .description {
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 600;
   align-content: center;
 }
 .subdescription {
