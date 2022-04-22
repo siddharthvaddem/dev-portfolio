@@ -23,14 +23,14 @@ const Projects = () => {
 
 
         <div className={styles.projectgriditem} style={{display:'flex',flexDirection:'column'}}>
-        <div className={styles.description}>Zune Music</div>
-         <p className={styles.subdescription}>CLI based music player for playlist CRUD operations and personal music player</p>
+        <div className={styles.description}>Huddl</div>
+         <p className={styles.subdescription}>A real-time collab tool where peers can brainstorm/collab via a text-editor</p>
           <div className={styles.altcol} style={{marginTop:'1vh'}}>
-            C++ | MCI API
+            React | NodeJS | FastAPI | Deta
           </div>
           <div className={styles.marginLinksingle} >
           <div >
-          <Link href="https://github.com/siddharthvaddem/MusicPlayer-PBL"><a target="_blank" > Github</a></Link></div>
+          <Link href="https://github.com/siddharthvaddem/huddl"><a target="_blank" > Github</a></Link></div>
           {/* <div><Link href="https://echoes-log.netlify.app/"><a target="_blank"> Live Demo</a></Link></div> */}
           </div>
         </div>

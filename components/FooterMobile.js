@@ -10,7 +10,7 @@ const FooterMobile = () => {
     
       <div className={styles.containerAlt} style={{display:'flex',flexDirection:'column'}}>
       <div style={{marginBottom:'-2vh'}}>
-          <h4 style={{textAlign:'center'}}>&copy; &nbsp;Siddharth Vaddem 2021</h4>
+          <h4 style={{textAlign:'center'}}>&copy; &nbsp;Siddharth Vaddem 2022</h4>
         </div>
         
         <div className={styles.navitemsmobile}>

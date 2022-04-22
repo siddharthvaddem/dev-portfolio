@@ -8,7 +8,7 @@ const Footer = () => {
     <nav style={{marginTop:'20vh'}}>
       <div className={styles.containerAlt}>
         <div>
-          <h4 style={{marginLeft:'5vw'}}>&copy; &nbsp;Siddharth Vaddem 2021</h4>
+          <h4 style={{marginLeft:'5vw'}}>&copy; &nbsp;Siddharth Vaddem 2022</h4>
         </div>
         <div className={styles.navitems}>
           <div>

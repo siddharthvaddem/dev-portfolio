@@ -41,9 +41,7 @@ const ToolsMobile = () => {
           </div>
           </div>
           <div style={{display:'flex',flexDirection:'row',textAlign:'center'}}>
-          <div >
-          <Image src="/graphql.png" width={75} height={75} alt=".." layout="intrinsic"></Image>
-          </div>
+          
           
         
           <div >
@@ -68,11 +66,12 @@ const ToolsMobile = () => {
           <div >
           <Image src="/python.png" width={75} height={75} alt=".." layout="intrinsic"></Image>
           </div>
-          </div>
-          
           <div >
           <Image src="/solidity.png" width={75} height={75} alt=".." layout="intrinsic"></Image>
           </div>
+          </div>
+          
+        
           
          
       

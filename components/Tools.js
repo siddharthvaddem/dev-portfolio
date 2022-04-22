@@ -60,7 +60,7 @@ const Tools = () => {
           <p className={styles.subdescription}>Backend Web Development</p>
           </div>
         </div>
-        <div className={styles.griditem}>
+        {/* <div className={styles.griditem}>
           <div className={styles.images}>
           <Image src="/graphql.png" width={50} height={50} alt=".." layout="intrinsic"></Image>
           </div>
@@ -68,7 +68,7 @@ const Tools = () => {
           <div>GraphQL and REST</div>
           <p className={styles.subdescription}>Backend</p>
           </div>
-        </div>
+        </div> */}
         <div className={styles.griditem}>
           <div className={styles.images}>
           <Image src="/firebase.png" width={50} height={50} alt=".." layout="intrinsic"></Image>
@@ -87,7 +87,7 @@ const Tools = () => {
           <p className={styles.subdescription}>Uni Coursework</p>
           </div>
         </div>
-        <div className={styles.griditem}>
+        {/* <div className={styles.griditem}>
           <div className={styles.images}>
           <Image src="/nextjs.png" width={50} height={50} alt=".." layout="intrinsic"></Image>
           </div>
@@ -95,14 +95,14 @@ const Tools = () => {
           <div>NextJS | Gatsby</div>
           <p className={styles.subdescription}>Framework</p>
           </div>
-        </div>
+        </div> */}
         <div className={styles.griditem}>
           <div className={styles.images}>
           <Image src="/python.png" width={50} height={50} alt=".." layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
           <div>Python Development</div>
-          <p className={styles.subdescription}>Backend ,API ,Bots</p>
+          <p className={styles.subdescription}>Backend, Scripting</p>
           </div>
         </div>
         <div className={styles.griditem}>
@@ -110,7 +110,7 @@ const Tools = () => {
           <Image src="/solidity.png" width={50} height={50} alt=".." layout="intrinsic"></Image>
           </div>
           <div className={styles.description}>
-          <div>Solidity | TruffleJS | Ganche</div>
+          <div>Solidity</div>
           <p className={styles.subdescription}>Blockchain Development</p>
           </div>
         </div>

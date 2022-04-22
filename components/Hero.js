@@ -17,12 +17,12 @@ const Hero = () => {
         <div className={styles.subtitle} >
         {' '}
        
-        Full Stack Developer who likes to build stuff with &nbsp;
+        Software Developer interested in the domains of &nbsp;
        
         
          <span className={styles.altcol}>
          <Typewriter
-            words={['React', 'NodeJS', 'NextJS', 'Javascript']}
+            words={['Web Dev', 'Blockchain', 'FinTech', 'Microservices','DevOps','Business']}
             loop={5}
             cursor
             cursorStyle='|'
@@ -37,11 +37,12 @@ const Hero = () => {
       
       </div>
      
-      <div className={styles.text}> &#128640;&nbsp;Exploring opportunities, side projects and new tech</div>
-      <div className={styles.text}> &#127891;&nbsp;Currently a CSE Student at BMSIT</div>
+      <div className={styles.text}> &#128640;&nbsp;Likes the<span className={styles.altcol}> web</span> and codes at times.</div>
+      <div className={styles.text}> &#127891;&nbsp;Currently a CSE Student at BMSIT.</div>
       </div>
       <div style={{display:'flex',alignItems:'center',textAlign:'center',marginLeft:'10vw',marginTop:'5vh'}}>
-      <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt=".." height="300" width="250" layout="intrinsic" ></Image>
+      {/* <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt=".." height="300" width="250" layout="intrinsic" ></Image> */}
+      <Image src="/astro.png" width="300" height={300} alt=".." layout="intrinsic"></Image>
        </div>
        
        </div>
