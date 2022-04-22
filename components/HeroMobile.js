@@ -18,10 +18,10 @@ const HeroMobile = () => {
         <div className={styles.subtitlemobile} >
         {' '}
        
-        Software Developer interested in the domains of &nbsp;
+        <span style={{fontStyle:'italic',fontWeight:100}}>Software Developer</span> interested in the domains of &nbsp;
        
         
-         <span className={styles.altcol}>
+         <span className={styles.altcol} style={{fontWeight:800}}>
          <Typewriter
             words={['Web Dev', 'Blockchain', 'FinTech', 'Microservices','DevOps','Business']}
             loop={5}
@@ -37,13 +37,15 @@ const HeroMobile = () => {
         
       
       </div>
+      <div style={{textAlign:'center'}}>
      
-      <div className={styles.textmobile}>&#128640;&nbsp;Likes the <span className={styles.altcol}>web</span> and codes at times. </div>
-      <div className={styles.textmobile}>&#127891;&nbsp;Currently a CSE Student at BMSIT.</div>
+      <div className={styles.textmobile}>&#128640;&nbsp;I like the <span className={styles.altcol} style={{fontWeight:800}}>web</span> and code at times. </div>
+      <div className={styles.textmobile}>&#127891;&nbsp;<span style={{fontStyle:'italic',fontWeight:100}} className={styles.altcol}>CompSci</span> undergrad at <span style={{fontStyle:'italic',fontWeight:800}} className={styles.altcol}> BMSIT</span>.</div>
+      </div>
       </div>
       <div style={{display:'flex',alignItems:'center',textAlign:'center',margin:'auto',marginTop:'2vh'}}>
       {/* <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt=".." height="300" width="250" ></Image> */}
-      <Image src="/astro.png" width="300" height={300} alt=".." layout="intrinsic"></Image>
+      <Image src="/astro.png" width="200" height="200" alt=".." layout="intrinsic"></Image>
        </div>
        
        </div>

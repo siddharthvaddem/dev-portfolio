@@ -41,7 +41,7 @@ export default function Home() {
     { !mobile ?<Hero/>:<HeroMobile/>}
     {!mobile? <Buttons/>:<ButtonsMobile/>}
     <div className={styles.container}>
-    <div className={styles.linktext} style={{textAlign:mobile&&'center'}}>  Find his resume 
+    <div className={styles.linktext} style={{textAlign:mobile&&'center'}}>  Find my resume 
       <a href='https://drive.google.com/file/d/18TCHFsujomItn89eXFgfLGc8sIX3lGYJ/view?usp=sharing' target="_blank" rel="noreferrer" className={styles.altcol}>
      
        
@@ -50,7 +50,7 @@ export default function Home() {
   
       </a>
       </div>
-    <div className={styles.linktext} style={{textAlign:mobile&&'center'}}>  More about siddharth <span >
+    <div className={styles.linktext} style={{textAlign:mobile&&'center'}}>  More about me <span >
     <Link href="/about">
       <a className={styles.altcol}> here.</a>
     </Link>

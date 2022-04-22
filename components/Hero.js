@@ -17,13 +17,13 @@ const Hero = () => {
         <div className={styles.subtitle} >
         {' '}
        
-        Software Developer interested in the domains of &nbsp;
+        <span style={{fontStyle:'italic',fontWeight:100}}>Software Developer</span> interested in the domains of &nbsp;
        
         
-         <span className={styles.altcol}>
+         <span className={styles.altcol}  style={{fontWeight:800}}>
          <Typewriter
             words={['Web Dev', 'Blockchain', 'FinTech', 'Microservices','DevOps','Business']}
-            loop={5}
+            loop={6}
             cursor
             cursorStyle='|'
             typeSpeed={50}
@@ -37,8 +37,8 @@ const Hero = () => {
       
       </div>
      
-      <div className={styles.text}> &#128640;&nbsp;Likes the<span className={styles.altcol}> web</span> and codes at times.</div>
-      <div className={styles.text}> &#127891;&nbsp;Currently a CSE Student at BMSIT.</div>
+      <div className={styles.text}> &#128640;&nbsp;I like the<span className={styles.altcol} style={{fontWeight:800}}> web</span> and code at times.</div>
+      <div className={styles.text}> &#127891;&nbsp;Currently a <span style={{fontStyle:'italic',fontWeight:100}} className={styles.altcol}>CompSci</span> undergrad at <span style={{fontStyle:'italic',fontWeight:800}} className={styles.altcol}> BMSIT</span>.</div>
       </div>
       <div style={{display:'flex',alignItems:'center',textAlign:'center',marginLeft:'10vw',marginTop:'5vh'}}>
       {/* <Image src="https://avatars.dicebear.com/api/male/siddharthvaddem.svg?mood[]=happy&mood[]=sad" alt=".." height="300" width="250" layout="intrinsic" ></Image> */}
