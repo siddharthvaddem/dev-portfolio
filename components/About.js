@@ -9,7 +9,7 @@ const About = () => {
   const { width } = useWindowDimensions();
 
  var mobile;
- if(width<= 420)
+ if(width<= 430)
  mobile=true;
  else mobile=false;
   return (
