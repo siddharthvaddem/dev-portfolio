@@ -56,7 +56,7 @@ const ContactForm = () => {
   
 
  var mobile;
- if(width<=420)
+ if(width<=430)
  mobile=true;
  else mobile=false;
  //console.log(mobile)
