@@ -36,13 +36,13 @@ const Allprojects = () => {
         
         <div  className={mobile?styles.projectgriditemmobile:styles.projectgriditem} style={{display:'flex',flexDirection:'column'}}>
         <div className={styles.description}>Huddl</div>
-         <p className={styles.subdescription}>A real-time collab tool where peers can brainstorm/collab via a text-editor</p>
+         <p className={styles.subdescription}>Realtime collab tool using SlateJS and socket-io where peers can collaborate via a text-editor and video-voice.</p>
           <div className={styles.altcol} style={{marginTop:'1vh'}}>
-          React | NodeJS | FastAPI | Deta
+          React | NodeJS | Sockets | Deta
           </div>
           <div className={styles.marginLinksingle} >
           <div >
-          <Link href="https://github.com/siddharthvaddem/huddl"><a target="_blank" > Github</a></Link></div>
+          <Link href="https://github.com/siddharthvaddem/collab-huddl"><a target="_blank" > Github</a></Link></div>
           {/* <div><Link href="https://echoes-log.netlify.app/"><a target="_blank"> Live Demo</a></Link></div> */}
           </div>
         </div>
