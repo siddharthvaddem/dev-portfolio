@@ -42,7 +42,7 @@ export default function Home() {
     {!mobile? <Buttons/>:<ButtonsMobile/>}
     <div className={styles.container}>
     <div className={styles.linktext} style={{textAlign:mobile&&'center'}}>  Find my resume 
-      <a href='https://drive.google.com/file/d/1FzEgyXDMrWPgvjq-oNNH2_yRRjJ2kyf0/view?usp=sharing' target="_blank" rel="noreferrer" className={styles.altcol}>
+      <a href='https://drive.google.com/file/d/1nSGDMEgc6FCanDZ4_gzMKmnwE80lkgeR/view?usp=sharing' target="_blank" rel="noreferrer" className={styles.altcol}>
      
        
       &nbsp;here.
